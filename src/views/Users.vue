@@ -24,6 +24,7 @@ export default {
     return {list:undefined}
   },
   created() {
+    
     this.axios.get("https://jsonplaceholder.typicode.com/posts").then(resp => {
      //console.log(data);
      this.list=resp.data;
